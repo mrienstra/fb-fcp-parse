@@ -1,0 +1,7 @@
+#log span {
+  padding-right: 0.25em;
+}
+.logToggle {
+  background: rgba(0, 0, 255, 0.1);
+  word-wrap: break-word;
+}

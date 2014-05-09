@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Cordova / Facebook Connect Plugin / Parse</title>
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <h2>Cordova / Facebook Connect Plugin / Parse</h2>
+        <ul id="log"></ul>
+        <button id="fbLogin" style="display:none;">Login with FB</button>
+
+        <!-- Facebook SDK -->
+        <div id="fb-root"></div>
+        <script>
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = 'http://connect.facebook.net/en_US/all/debug.js'; /* todo: remove "/debug" for prod */
+             fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script src="cordova.js"></script>
+        <script src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+            app.initialize();
+        </script>
+    </body>
+</html>

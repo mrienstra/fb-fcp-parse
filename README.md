@@ -1,0 +1,1 @@
+Demo of using [Parse](https://www.parse.com/) with either the [Facebook Connect Plugin](https://github.com/phonegap/phonegap-facebook-plugin) *or* the [Facebook JS SDK](https://developers.facebook.com/docs/javascript).
